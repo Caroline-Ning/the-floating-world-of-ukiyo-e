@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Shippori+Mincho+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    cursor: url("../images/whitecircle.png"),default;
+}
+body{
+
+    /* border: 1px solid black; */
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size:1rem;
+    font-family: 'Raleway','Shippori Mincho B1',sans-serif;
+    line-height: 1.75;
+}
+body a{
+    cursor: url("../images/whitecircle.png"),default;
+}
+.menuB{
+    /* cursor: pointer; */
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    padding:10px 0;
+    transition: all 0.5s;
+}
+.menuB:hover{
+    transform: scale(1.25);
+}
+#cross{
+    /* cursor: pointer; */
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    transition: all 0.4s;
+}
+#cross:hover{
+    transform: scale(1.35);
+}
+.full-screen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 999;
+  }
+.hidden {
+      display: none;
+}
+
+#navLinks {
+    width: 100%;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    margin-top:20px;
+}
+#navLinks li{
+    margin: 0 25px;
+}
+#navLinks a{
+    color: #777;
+    font-weight:1000;
+    text-align: center; 
+    text-decoration: none;
+}
+#currentL a{
+    color: #fff;
+    background-color: #b59cbd;
+}
+#navLinks a:hover{        
+    color: #fff;
+/*    background-color: #aeb8a2; //清新抹茶绿*/
+    background-color: #b59cbd;
+}
+footer a:hover{                
+    text-decoration: underline;
+}
+footer{
+    margin-top: 60px;
+    padding: 10px 300px;
+    /* background-color:#73877b; */
+}
+#footer_items{
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color:#ad8fb6;
+    font-size: 0.5rem;
+}
+footer a{
+    font-size: 0.5rem;
+    color:#ad8fb6;
+    text-decoration: none;
+}
+.last{
+    margin-bottom: 150px;
+}

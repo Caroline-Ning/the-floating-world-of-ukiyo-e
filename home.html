@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="css/navBodyFooterFont.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script src="js/sketch.js"></script>
+
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+</head>
+
+<body>
+  <div id="canvasDiv"></div>
+
+  <header>
+    <!-- <div id="imgname">Suijin Shrine and Massaki on the Sumida River, by Utagawa Hiroshige</div> -->
+    <div id="title">The Floating World of Ukiyo-e</div>
+    <div class="menuB" onclick="showPopup()"><img src="images/home/menuB.png" width="28px"></div>
+    <nav class="full-screen hidden">
+      <img id="cross" onclick="closePopup()" src="images/home/cross.png" width="20px">
+      <ul id="navLinks">
+        <li id="currentL"><a href=#>Home</a></li>
+        <li><a href=intro.html>Introduction</a></li>
+        <li><a href=expan.html>Expansion</a></li>
+        <li><a href=insp.html>Inspiration</a></li>
+      </ul>
+      <footer>
+        <ul id="footer_items">
+          <li>&copy;2021</li>
+          <li><a href="https://www.instagram.com/carrot_line_/" target="_blank">Caroline Ning</a></li>
+          <li><a href="https://www.duke.edu" target="_blank">Duke University</a></li>
+        </ul>
+      </footer>
+    </nav>
+  </header>
+
+  <section id="section1">
+    <div class="regularP">
+      <p>Living only for the moment, savoring the moon, the snow, the cherry blossoms, and the maple leaves, singing
+        songs, drinking wine, and diverting oneself in simply floating, unconcerned by the prospect of imminent poverty,
+        buoyant and carefree, like a gourd carried along with the current of the river. This what we call the "floating
+        world."
+        <br>
+      <p class="right">——Asai Ryoi, <span class="ita">Tales of the Floating World</span></p>
+      </p>
+      <a href="intro.html"><p class="more">「 MORE 」</p></a>
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="left">
+      <div class="section2P">
+        <p>Some art scholars believe that Ukiyo-e woodblock prints had a huge influence on the Impressionism,
+          Post-Impressionism & the Nouveau art movements. Ukiyo-e inspired European artists such as Oscar-Claude Monet,
+          Vincent Van Gogh, and Henri de Toulouse-Lautrec and led to the Japonisme movement in art and design.</p>
+        </p>
+        <a href='expan.html'><p class="more">「 MORE 」</p></a>
+      </div>
+    </div>
+    <div class="right">
+      <img src="images/expan/c Debussy_-_La_Mer_-_The_great_wave_of_Kanaga_from_Hokusai.jpeg" width="250px">
+    </div>
+  </section>
+
+  <section id="section4">
+    <div class="p4">
+      <p>Ukiyo-e continues to influence and inspire modern artists. Find your inspiration here.</p>
+      <a href='insp.html'><p class="more">「 MORE 」</p></a>
+    </div>
+  </section>
+
+
+  <script src="js/popup.js"></script>
+  <script>
+        ScrollOut({
+            threshold:0.4,
+            targets:'section',
+            once:true
+        });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+header{
+    width: 100%;
+    height: 130px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(478px,1fr));
+    grid-gap: 1.2rem;
+    margin: 0 10px;
+}
+.group{
+    margin-bottom: 20px;
+}
+.imgContainer{
+    height: 200px;
+}
+.imgContainer img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+    /* cursor: pointer; */
+}
+.imgContainer img:hover{
+    transform: scale(1.005);
+    box-shadow:4px 4px 5px #888888;
+}
+.name{
+    margin-top: 5px;
+    font-family: "futura",sans-serif;
+    font-size: 0.8rem;
+}
+.person{
+    font-size: 0.6rem;
+}

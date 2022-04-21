@@ -1,0 +1,188 @@
+header{
+    width: 100%;
+    height: 130px;
+}
+section{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    margin: 50px auto;
+} 
+
+section img{
+    width:30px;
+    opacity: 60%;
+    /*#b694c1浅亮紫色，注意饱和度*/ 
+}
+.circle{
+display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.texts{
+    width: 90%;
+    display: block;
+}
+.subT{
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #b694c1;
+}
+.group{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.group img{
+    display: block;
+    margin: 0 auto;
+}
+.imgP{
+    width: 100%;
+    position: relative;
+}
+.p1{
+    position: absolute;
+    background-color: white;
+    padding: 0.5% 1%;
+    bottom: 0;
+    left: 0;
+    font-size: 0.5rem;
+}
+.p2{
+    position: absolute;
+    background-color: white;
+    padding: 1% 3%;
+    bottom: 0;
+    right: 0;
+    font-size: 0.5rem;
+}
+.overlay{
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    position: absolute;
+    width: 35%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s;
+}
+.group2{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.group2 img{
+    height: 470px;
+}
+.group2 span{
+    width: 25%;
+}
+.imgP2{
+    position: relative;
+}
+.p3{
+    position: absolute;
+    background-color: white;
+    padding: 1% 3%;
+    font-size: 0.5rem;
+    bottom: 0;
+    right: 0;
+}
+.p4{
+    position: absolute;
+    background-color: white;
+    padding: 1% 3%;
+    font-size: 0.5rem;
+    bottom: 0;
+    left: 0;
+}
+.p5{
+    width: 80%;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    font-size: 0.5rem;
+    bottom: 0;
+    left: 0; 
+}
+.group3{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    height: 400px;
+}
+.imgP3{
+    width: 30%;
+    margin-right: 10px;
+    height: 400px;
+    position: relative;
+}
+#bridge{
+    width: 100%;
+}
+#forRight{
+    width: 35%;
+}
+#night{
+    width:100%;
+}
+.group4{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+.imgP4{
+    position: relative;
+}
+.imgP4 img{
+    height: 485px;
+    display: block;
+}
+#manga{
+    margin-left: 4.5%;
+}
+.p6{
+    position: absolute;
+    background-color: white;
+    width: 45%;
+    text-align: center;
+    padding: 0 1% 0 5%;
+    font-size: 0.5rem;
+    bottom: 0;
+    left: 0;  
+}
+
+.overlay2{
+    border: 3px solid black;
+    position: absolute;
+    width: 50%;
+    bottom: 12.5%;
+    right: 25%;
+    left: 25%;
+    opacity: 0;
+    transition: all 2s;
+}
+.n5{
+    margin: 50px auto 0;
+}
+
+
+
+[data-scroll]{
+    transition: all 5s;
+}
+
+[data-scroll="in"]{
+    opacity: 1;
+}
+[data-scroll="out"]{
+    opacity: 0;
+}
+

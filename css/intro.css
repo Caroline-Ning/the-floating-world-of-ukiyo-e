@@ -1,0 +1,140 @@
+header{
+    width: 100%;
+    height: 130px;
+}
+#opening p{
+    font-size: 0.5rem;
+	line-height: 5px;
+}
+.subT{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 55px auto 10px;
+    display: inline-block;
+    border-bottom: 1px solid #839788;
+    line-height: 1.35;
+    font-family: 'Raleway','Shippori Mincho B1',sans-serif;
+}
+.subT .char {
+  display: inline-block;
+  animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
+  animation-delay: calc(150ms * var(--char-index)); 
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-1em) rotate(-.5turn) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.nameT{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #839788;
+}
+.n2{
+    margin-left: 25%;
+}
+.n3{
+    margin-left: 50%;
+}
+.n4{
+    margin-left: 75%;
+}
+.imgContainer{
+    width: 100%;
+    margin:20px auto;
+/*    padding: 10px;*/
+/*border:1px solid black;*/
+    overflow: hidden;
+    position: relative;
+}
+.slide{
+    margin: 0 auto;
+/*    border: 1px solid red;*/
+    display: flex;
+    width: 96%;
+    height: 382px;
+}
+.jsSlide2{
+    width: 24%;
+}
+.jsSlide3{
+    width: 32%;
+}
+.jsSlide4{
+    width: 95%;
+/*    border: 1px solid red;*/
+}
+.slide img{
+    flex-shrink: 0;
+    display: inline-block;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+.description{
+    transform: translateY(30px);
+    transition: transform 0.7s;
+}
+
+.description{
+    margin: auto 200px;
+}
+.prevB{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 0;
+    font-size: 30px;
+    opacity: 0.3;
+    cursor: pointer;  
+}
+.nextB{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 0;
+    font-size: 30px;
+    opacity: 0.3;
+    cursor: pointer;  
+}
+
+
+
+[data-scroll]{
+    transition: all 2s;
+}
+
+[data-scroll="in"]{
+    opacity: 1;
+    transform: translateX(0);
+}
+[data-scroll="out"]{
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+
+
+
+
